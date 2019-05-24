@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пульт</title>
+    <link rel="stylesheet" href="staff/controls.css">
+</head>
+<body>
+    <div id="wrapper">
+
+        <div class="manual">
+            <p>Клавиатурой не пользоваться</p>
+        </div>
+
+        <div id="controls">     
+
+            <div class="block red">
+                <div class="score red">
+                    <h3 id="right_score">00</h3>
+                </div>
+                <div class="controls red">
+                    <button class="button red" onclick="manage_right_score(0)">-</button>
+                    <button class="button red" onclick="manage_right_score(1)">+</button>
+                </div>
+            </div>
+
+            <div class="block timer">
+                <div id="time">
+                    <h3 id="timer">00:00</h3>
+                    <h3 id="icon" class="pause">||</h3>
+                </div>
+                <div class="controls time">
+                    <button class="button timer" onclick="start_stop_timer() ,switchPlayStop()">Старт/стоп</button>
+                </div>
+            </div>
+
+            <div class="block blue">
+                <div class="score blue">
+                    <h3 id="left_score">00</h3>
+                </div>
+                <div class="controls blue">
+                    <button class="button blue" onclick=manage_left_score(1)>+</button>
+                    <button class="button blue" onclick=manage_left_score(0)>-</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="staff/controls.js"></script>
+
+
+</body>
+</html>

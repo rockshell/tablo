@@ -1,0 +1,8 @@
+.strike {
+    color: red;
+    visibility: visible;
+}
+
+.strike_hidden {
+    visibility: hidden;
+}
